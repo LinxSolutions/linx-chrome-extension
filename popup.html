@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Linx - Learn a new language just by watching Netflix</title>
+        <link rel="stylesheet" type="text/css" href="bulma.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    </head>
+
+    <body>
+
+
+
+
+        <div class="outer">
+
+            <article id="header" class="media">
+                <figure class="media-left">
+                    <p class="image is-64x64">
+                        <img src="logo.png">
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <h1 class="title">Linx</h1>
+                        <h6 class="subtitle is-6">
+                            Learn a new language just by watching Netflix
+                        </h6>
+                    </div>
+                </div>
+            </article>
+
+
+            <div id="loading" class="inner">
+                <img src="loading.gif" class="loading-img">
+            </div>
+
+
+            <div id="login" class="inner">
+
+                <div id="status">Username or Password Incorrect</div>
+
+                <div class="field">
+                    <label class="label is-small">Username</label>
+                    <div class="control">
+                        <input id="loginUsername" class="input is-small" type="text" placeholder="johnDoe12">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label is-small">Password</label>
+                    <div class="control">
+                        <input id="loginPassword" class="input is-small" type="password" placeholder="••••••••">
+                    </div>
+                </div>
+
+                <div class="field br">
+                    <button id="loginSigninBtn" class="button is-primary is-fullwidth is-small">sign in</button>
+                </div>
+
+                <div class="field br">
+                    Don't have an account? <a id="loginSignupBtn" href="#">Sign Up</a>
+                </div>
+            </div>
+
+
+
+            <div id="loggedIn">
+
+                <div class="navbar">
+                    <img src="logo-full.PNG" class="navbar-img">
+                    <a id="logoutBtn" class="navbar-btn">
+                        <span class="icon" style="color: #333;">
+                          <i class="fa fa-sign-out"></i>
+                        </span>
+                    </a>
+                    <!--<a id="externalLinkBtn" class="navbar-btn" style="margin-top:5px;">-->
+                        <!--<span class="icon" style="color: #333;">-->
+                          <!--<i class="fa fa-external-link" style="font-size: 18px;"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                </div>
+
+                <div class="toggle">
+                    <span class="toggle-label">Enable/Disable Linx</span>
+
+                    <div class="toggle-switch">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div id="lessons" class="lessons-container">
+
+                        <div class="box lesson has-text-centered">
+                            <h6 class="title is-6">Hiragana 1</h6>
+                            <div class="progress">
+
+                            </div>
+                            <a class="button is-small is-primary is-fullwidth">View Media</a>
+                        </div>
+
+                        <div class="box lesson"></div>
+
+                    </div>
+                </div>
+
+                <a class="button is-info is-fullwidth is-small">View Progress</a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <script src="jquery.min.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
