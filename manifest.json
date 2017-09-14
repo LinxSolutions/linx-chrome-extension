@@ -1,10 +1,18 @@
 {
   "manifest_version": 2,
-
   "name": "Linx",
   "description": "Learn a new language just by watching Netflix.",
   "version": "1.0",
-
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.netflix.com/watch/*", "https://netflix.com/watch/*"],
+      "js": ["jquery.min.js", "netflix.js"]
+    }
+  ],
   "browser_action": {
     "default_icon": "logo.png",
     "default_popup": "popup.html"

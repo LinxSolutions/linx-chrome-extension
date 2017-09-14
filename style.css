@@ -124,6 +124,7 @@ input:checked + .slider:before {
     height: 250px;
     overflow-x: scroll;
     overflow-y: hidden;
+    width: 350px;
 }
 
 .lessons-container {
@@ -141,4 +142,124 @@ input:checked + .slider:before {
     height: 200px;
     width: 150px;
     margin-right: 16px;
+}
+
+
+#backBtn {
+    margin-right: 16px;
+    color: #242424;
+}
+
+
+
+
+
+
+
+.chart {
+    position:relative;
+    width:100px;
+    height:100px;
+}
+.chartCircle {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.chartText {
+    color:#555;
+    display:block;
+    line-height:100px;
+    text-align:center;
+    width:100px;
+    font-family:sans-serif;
+    font-size:18px;
+    font-weight:100;
+}
+
+
+
+.progress .chart {
+    position:relative;
+    width:70px;
+    height:70px;
+}
+.progress .chart .chartCircle {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.progress .chart .chartText {
+    color:#555;
+    display:block;
+    line-height:70px;
+    text-align:center;
+    width:70px;
+    font-family:sans-serif;
+    font-size:18px;
+    font-weight:100;
+}
+
+
+
+
+
+
+
+
+
+#lessonProgress {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#lessonMedia {
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.list-item {
+    background-color: #ffffff;
+    padding: 4px;
+    margin-bottom:4px;
+}
+
+.media-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.media-type {
+    font-size: 10px;
+}
+
+.is-grey {
+    color: #dedede;
+}
+
+.is-green {
+    color: #7EBC47;
+}
+
+.btn-group {
+    margin-top: 7px;
+}
+
+.btn-group .is-green {
+    background-color:#7EBC47;
+    border-color:#7EBC47;
+    border-radius: 15px;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.btn-group .is-blue {
+    background-color:#3273DC;
+    border-color:#3273DC;
+    border-radius: 15px;
+    color:#ffffff;
+    font-weight:bold;
 }
